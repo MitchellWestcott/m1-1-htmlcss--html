@@ -1,1 +1,44 @@
 <!-- ...crickets... -->
+
+
+<h1>Registration form</h1>
+<form action="/action_page.php">
+    <label for="username">Username</label>
+    <input type="text" required />
+    <label for="password">Password</label>
+    <input type="text" required />
+    <label for="email">Email</label>
+    <input type="text" required />
+</form>
+<h3>Which taxi do you require?</h3>
+<form action="/action_page.php">
+    <input type="radio">
+    <label for="car">Car</label>
+    <input type="radio">
+    <label for="van">Van</label>
+    <input type="radio">
+    <label for="tuktuk">Tuk Tuk</label>
+</form>
+<h3>Choose your extras</h3>
+<form>
+    <input type="checkbox">
+    <label for="bbseat">Baby seat</label>
+    <input type="checkbox">
+    <label for="wheelchair">Wheelchair access</label>
+    <input type="checkbox">
+    <label for="privacyw">Privacy windows</label>
+</form>
+<h3>Where would you like us to pick you up?</h3>
+<label for="location">Pickup Location:</label>
+<select name="location" id="location">
+    <option value="selectone">Select One</option>
+    <option value="mileend">Mile End</option>
+    <option value="parcex">Parc-Ex</option>
+    <option value="plateau">Plateau</option>
+    <option value="ndg">NDG</option>
+</select>
+<h3>Additional Instructions</h3>
+<form action="/action_page.php" id="specialins">Special
+    <textarea id="specialinst" placeholder="provide special instructions here" value=""></textarea>
+    <input type="submit" value="Submit">
+</form>
